@@ -22,4 +22,10 @@ func main() {
 	var anotherVar int
 	fmt.Println(anotherVar)
 	fmt.Printf("variable is of type: %T \n", anotherVar)
+
+	var website = "learncodeonline.in"
+	fmt.Println(website)
+
+	numberOfUser := 30000 //val
+	fmt.Println(numberOfUser)
 }
