@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+const LoginToken string = "ghabbhhjd" //public
+
 func main() {
 	var username string = "Rahul"
 	fmt.Println(username)
@@ -26,6 +28,9 @@ func main() {
 	var website = "learncodeonline.in"
 	fmt.Println(website)
 
-	numberOfUser := 30000 //val
+	numberOfUser := 30000 //valras operator is allowed only insde a method or function
 	fmt.Println(numberOfUser)
+
+	fmt.Println(LoginToken)
+
 }
