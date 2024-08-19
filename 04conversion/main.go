@@ -5,9 +5,13 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func main() {
+
+	fmt.Println("Welcom to our Pizza")
+	fmt.Println("Please rate our Pizza between 1 and 5")
 
 	fmt.Println("Welcom to our Pizza")
 	fmt.Println("Please rate our Pizza between 1 and 5")
@@ -18,11 +22,12 @@ func main() {
 
 	fmt.Println("Thanks for rating", input)
 
-	numRating, err := strconv.ParseFloat(input, 64)
+	numRating, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
 
 	if err != nil {
 		fmt.Println(err)
 	} else {
 		fmt.Println("Added 1 to your Rating: ", numRating+1)
 	}
+
 }
